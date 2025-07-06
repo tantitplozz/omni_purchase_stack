@@ -1,0 +1,29 @@
+{
+  "target": "apple.com/th",
+  "product": {
+    "name": "iPhone 16 Pro Max",
+    "color": "White",
+    "storage": "256GB",
+    "pickup": "CentralWorld"
+  },
+  "card": {
+    "name": "Suthawan Siriratusdorn",
+    "address": "787/791 Happy Condo Ladprao, Building G, Soi Ladprao 101, Khlong Chaokhunsing Wang Thonglang, Bangkok 10310",
+    "number": "4417701003947464",
+    "exp": "07/25",
+    "cvv": "768",
+    "tel": "0627046442",
+    "email": "mogo.suthawan@gmail.com"
+  },
+  "steps": [
+    {
+      "agent": "browser",
+      "task": "open_url",
+      "url": "https://www.apple.com/th/shop/buy-iphone/iphone-16-pro"
+    },
+    { "agent": "search", "task": "find_product", "keyword": "iPhone 16 Pro Max สีขาว 256GB" },
+    { "agent": "cart", "task": "add_to_cart", "selector": "#add-to-cart" },
+    { "agent": "checkout", "task": "checkout_form" }
+  ],
+  "notify": "telegram"
+}
